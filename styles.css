@@ -1,0 +1,37 @@
+.imagen-superpuesta{
+right: 20%;
+top: 35%;
+width: 60%;
+}
+
+.imagen-fondo{
+    opacity: 0.95;
+    width: 100%;
+}
+
+.nombre-servicio{
+    top: 0;
+    left: 25%;
+}
+
+.nombre-servicio p{
+    top: 0;
+   left: 15%; 
+   color: black;
+   font-size: 70px; 
+   font-weight: 900;
+   text-shadow: 4px 4px 2px rgba(114, 231, 212, 0.5);
+}
+
+.images-carousel{
+    width: 100%;
+    
+}
+
+.navbar{
+    background: #212746;
+}
+
+.servicios{
+    background: #7fb3d5;
+}
