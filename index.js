@@ -40,3 +40,5 @@ function animacion() {
   }
 
   window.addEventListener("load", animacion);
+
+ 
