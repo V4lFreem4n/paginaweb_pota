@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lilita+One&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
     --color-blue-1:rgb(9,29,54);
     --color-blue-2:rgb(58,78,122);;
@@ -10,6 +12,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background: var(--color-blue-5);
+
 }
 
 .title-main{
@@ -46,6 +50,66 @@ width: 60%;
     width: 100%;
 }
 
+.logo-title{
+    margin-top: 200px;
+    position: relative;
+}
+
+.float-logo-title{
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+}
+
+.float-logo-title img{
+   height: 70px;
+   width: 70px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#float-logo-title-1{
+    top: -150px;
+    left: 60px;
+}
+
+
+#float-logo-title-2{
+    top: 100px;
+   left: 0;
+}
+
+
+#float-logo-title-3{
+    top: -150px;
+   right: 60px;
+}
+
+.float-title{
+    font-size: 20px;
+    color: var(--color-blue-2);
+}
+
+.float-title-details{
+    font-family: "Roboto", sans-serif;
+}
+
+#float-logo-title-4{
+    top: 100px;
+   right: 0;
+}
+
+
+.logo-who-us{
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+}
+
+.callout-info{
+    font-size: 24px;
+}
+
 .nombre-servicio{
     top: 0;
     left: 25%;
@@ -66,29 +130,88 @@ width: 60%;
 }
 
 .navbar{
-    background: #212746;
+    z-index: 300;
+    position: fixed;
+    width: 100%;
+    background: var(--color-blue-1);
 }
 
 .servicios{
-    background: rgba(18, 31, 54, 0.596);
-    
-    height: 200px;
+    background-image:linear-gradient(to bottom, rgba(6, 6, 10, 0.52), rgba(0, 0, 0, 0.73)),url('images/segundo_fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.servicios p{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--color-blue-5);
 }
 
 .services-details{
     padding: 20px;
-    background: #7fb3d5;
+    background: var(--color-blue-3);
     border-radius: 20px;
     margin-top: -100px;
     height: 300px;
     width: 250px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
 }
 
+.services-details:hover {
+    transform: scale(1.05); /* Ajusta el valor para más o menos zoom */
+  }
+
 .image-service-details{
+    position: relative;
     background: #eaeef1;  
     height: 80px;
     width: 80px;
     border-radius: 50%;
+}
+
+.more-details-services{
+    display: none; /*display: inline-block; ;Necesario para que el subrayado esté solo en el contenido del párrafo */
+    position: relative;
+    cursor: pointer;
+}
+
+.more-details-services::after {
+    content: ""; /* Crea el subrayado */
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px; /* Ajusta el grosor del subrayado */
+    background-color: #000; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente invisible */
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+  
+  .more-details-services:hover::after {
+    transform: scaleX(1); /* Aparece el subrayado en hover */
+  }
+
+
+
+.services-details h4{
+    color: var(--color-blue-5);
+}
+
+.icono-service-details{
+    position: absolute;
+    top: 15px;
+    right:15px;
+    
+    height: 50px;
+    width: 50px;
+}
+
+.nuestro-producto{
+    margin-top: 120px;
 }
 
 .section-services{
@@ -132,7 +255,7 @@ width: 60%;
     position: relative;
     height: 500px;
     width: 600px;
-    background: #e7e9eb
+    background: #d5d8dc;
 }
 
 .square-image{
@@ -150,7 +273,109 @@ background: #284469
     position: absolute;
     height: 400px;
     width: 400px;
-    background: #637996
+    background: #050720
+}
+
+.content-square-image{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-square-description{
+height: 400px;
+width: 400px;
+position: relative;
+overflow: hidden;
+
+}
+
+.content-square-description button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#square-image-1{
+    background: #079b62;
+height: 400px;
+width: 400px;
+position: absolute;
+top: 0;
+left: 0;
+    transition: transform 1s ease;
+}
+
+#square-image-2{
+    background: #5cce27;
+    height: 400px;
+width: 400px;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    transition: transform 1s ease;
+}
+
+#square-description-1{
+    padding: 40px;
+    height: 350px;
+    width: 400px;
+    position: absolute;
+    background: #201f2c;
+    top: 0;
+    left: 0;
+    transition: transform 1s ease;
+}
+
+#square-description-2{
+    padding: 40px;
+    height: 350px;
+    width: 400px;
+    position: absolute;
+    background: #1d1d24;
+    top: 0;
+    left: 400px;
+    transition: transform 1s ease;
+}
+
+
+.mover {
+    transform: translateX(400px); /* Mueve el div a la derecha */  
+}
+.volver {
+    transform: translateX(-400px); /* Mueve el div a la izquierda */
+}
+
+.flechas{
+    cursor: pointer;
+    position: absolute;
+}
+.flechas:hover{
+    height: 30px;
+    width: 30px;
+}
+
+.flecha-izquierda{
+    top: calc(25px/2);
+    right: 60px;
+    transition: .5s ease;
+}
+
+.flecha-derecha{
+    top: calc(25px/2);
+    right: 10px;
+    transition: .5s ease;
+}
+
+.flecha-izquierda:hover{
+    top: 10px;
+    right: 60px;
+}
+
+.flecha-derecha:hover{
+    top: 10px;
+    right: 10px;
 }
 
 .contact-us {
@@ -158,8 +383,17 @@ background: #284469
     
 }
 
+.fondo-image-form{
+    justify-items: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
 .image-contact-fondo {
-    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),url('images/fondo_pezca.jpg');
+    background-image:linear-gradient(to bottom, rgba(13, 14, 20, 0.52), rgba(0, 0, 0, 0.73)),url('images/tercer_fondo.jpg');
     height: 700px;
     width: 100%;
     background-size: cover;
@@ -181,15 +415,22 @@ background: #284469
 }
 
 .zone-form{
+    color: white;
     height: auto;
     width: auto;
-    background: #e7e9eb;
+    background: var(--color-blue-1);
     padding: 25px;
 }
 
 footer{
-    height: 400px;
+    
+    padding: 30px;
+    height: 200px;
     width: 100%;
     background: #0b0d18;
+}
+
+.footer-details{
+    font-size: 16px;
 }
 
