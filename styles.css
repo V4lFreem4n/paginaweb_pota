@@ -13,8 +13,87 @@
 body {
     font-family: 'Inter', sans-serif;
     background: var(--color-blue-5);
-
 }
+
+#link-producto{
+    transition: all 1s ease;
+    position: relative;
+}
+#link-nosotros{
+    transition: all 1s ease;
+    position: relative;
+}
+#link-contactar{
+    transition: all 1s ease;
+    position: relative;
+}
+
+#link-producto::after {
+    content: ""; /* Crea el subrayado */
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px; /* Ajusta el grosor del subrayado */
+    background-color: #ffffff; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente invisible */
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+  
+  #link-producto:hover::after {
+    transform: scaleX(1); /* Aparece el subrayado en hover */
+  }
+
+  #link-nosotros::after {
+    content: ""; /* Crea el subrayado */
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px; /* Ajusta el grosor del subrayado */
+    background-color: #ffffff; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente invisible */
+    transition: transform 0.3s ease; /* Transición suave */
+  }
+  
+  #link-nosotros:hover::after {
+    transform: scaleX(1); /* Aparece el subrayado en hover */
+  }
+
+  #link-contactar::after {
+    content: ""; /* Crea el subrayado */
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 2px; /* Ajusta el grosor del subrayado */
+    background-color: #ffffff; /* Color del subrayado */
+    transform: scaleX(0); /* Inicialmente invisible */
+    transition: transform 0.5s ease; /* Transición suave */
+  }
+  
+  #link-contactar:hover::after {
+    transform: scaleX(1); /* Aparece el subrayado en hover */
+  }
+
+
+.icon-whatsapp-float{
+    bottom:30px;
+    right:10px;
+    z-index: 500;
+    cursor: pointer;
+}
+
+.img-whatsapp-float {
+    transition: all 0.3s ease;
+}
+
+.img-whatsapp-float:hover{
+    height: 80px;
+    width: 80px;
+    bottom:30px;
+}
+
 
 .title-main{
     font-weight: 700;
@@ -150,11 +229,17 @@ width: 60%;
     color: var(--color-blue-5);
 }
 
+.contenedor-cards{
+    display: grid;
+    justify-items: center; /* Centra los elementos en cada celda */
+    align-items: start; /* Alinea los elementos al inicio de la celda */
+    gap: 10px;
+}
+
 .services-details{
     padding: 20px;
     background: var(--color-blue-3);
     border-radius: 20px;
-    margin-top: -100px;
     height: 300px;
     width: 250px;
     transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -211,7 +296,8 @@ width: 60%;
 }
 
 .nuestro-producto{
-    margin-top: 120px;
+    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .section-services{
@@ -219,7 +305,7 @@ width: 60%;
 }
 
 .description-services{
-    min-height: 300px;
+    height: 300px;
     background: #d5d8dc;
   
 }
@@ -244,8 +330,10 @@ width: 60%;
     position: absolute;
     height: 400px;
     width: 400px;
-    background: #284469
+    background: #284469;
+
 }
+ 
 
 .about-us{
     margin-top: 100px;
@@ -379,7 +467,8 @@ width: 400px;
 }
 
 .contact-us {
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-top: 50px;
     
 }
 
@@ -417,20 +506,26 @@ width: 400px;
 .zone-form{
     color: white;
     height: auto;
-    width: auto;
+    min-width: 300px;
     background: var(--color-blue-1);
     padding: 25px;
 }
 
 footer{
-    
+    display: grid;
+    gap: 50px;
     padding: 30px;
     height: 200px;
     width: 100%;
     background: #0b0d18;
+    text-align: center;
 }
 
 .footer-details{
     font-size: 16px;
 }
 
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

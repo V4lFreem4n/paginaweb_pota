@@ -1,0 +1,207 @@
+/* Dispositivos muy pequeños (teléfonos en modo vertical) */
+@media (max-width: 576px) {
+    /* Estilos para pantallas extra pequeñas */
+    .contenedor-cards {
+        grid-template-columns: 1fr; 
+    }
+
+    .card-service-1{
+        margin-top: -70px;
+    }
+
+    .title-secundary{
+        font-size: 25px;
+    }
+
+    .title-description{
+        font-size: 16px;
+    }
+
+    .float-logo-title{
+        display: none;
+    }
+
+    .image-services{
+        left: 0;
+        top: -400px;
+        height: 350px;
+        width: 350px;
+    }
+
+    .image-services-2{
+        left: 0;
+        top: -400px;
+        height: 350px;
+        width: 350px;
+    }
+
+    .section-services{
+        margin-top: 450px;
+    }
+
+    .square-mision-vision{
+        width: 400px;
+        margin-bottom: 400px;
+    }
+
+    .square-image{
+        top: 0;
+        left: 0;
+    }
+
+    .square-description{
+        top: 400px;
+        left: 0;
+    }
+
+    .informacion-empresa-form{
+        display: none;
+    }
+
+    footer{
+        height: auto;
+    }
+
+   .footer-grid{
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+   }
+
+}
+
+/* Dispositivos pequeños (teléfonos en modo horizontal y tablets pequeñas) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .contenedor-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-service-1, .card-service-2{
+        margin-top: -70px;
+    }
+
+    .float-logo-title{
+        display: none;
+    }
+    .image-services{
+        top: -400px;
+    }
+
+    .image-services-2{
+        top: -400px;
+    }
+
+    .section-services{
+        margin-top: 450px;
+    }
+
+    .square-mision-vision{
+        width: 500px;
+        margin-bottom: 350px;
+    }
+
+    .square-image{
+        top: 0;
+        left: 50px;
+    }
+
+    .square-description{
+        top: 400px;
+        left: 50px;
+    }
+
+    .svg-info-form{
+        width: 20px;
+        width: 20px;
+    }
+
+    .fondo-image-form{
+        height: 40px;
+        width: 40px;
+    }
+
+    .description-contact-us{
+        font-size: 16px;
+    }
+
+    .informacion-empresa-form{
+        display: none;
+    }
+    
+    footer{
+        height: auto;
+    }
+
+   .footer-grid{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+   }
+
+}
+
+/* Tablets y dispositivos medianos */
+@media (min-width: 768px) and (max-width: 1050px) {
+    /* Estilos para pantallas medianas (md) */
+
+    .contenedor-cards {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .card-service-1, .card-service-2, .card-service-3{
+        margin-top: -100px;
+    }
+    .card-service-4 {
+        margin-top: 10px;
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .float-logo-title{
+        display: none;
+    }
+
+    .image-services{
+        right: 10px;
+    }
+
+    .image-services-2{
+        left: 10px;
+    }
+
+    
+
+}
+
+/* Dispositivos grandes (escritorio) */
+@media (min-width: 1050px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes (lg) */
+    .contenedor-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card-service-1, .card-service-2, .card-service-3,.card-service-4{
+        margin-top: -100px;
+    }
+}
+
+/* Dispositivos extra grandes (escritorio amplio) */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    /* Estilos para pantallas extra grandes (xl) */
+    .contenedor-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card-service-1, .card-service-2, .card-service-3,.card-service-4{
+        margin-top: -100px;
+    }
+    
+}
+
+/* Dispositivos muy grandes (monitores 4K y ultra anchos) */
+@media (min-width: 1400px) {
+    /* Estilos para pantallas muy grandes (xxl) */
+    .contenedor-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .card-service-1, .card-service-2, .card-service-3,.card-service-4{
+        margin-top: -100px;
+    }
+
+    
+}
