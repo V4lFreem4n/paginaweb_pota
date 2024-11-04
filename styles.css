@@ -13,7 +13,9 @@
 body {
     font-family: 'Inter', sans-serif;
     background: var(--color-blue-5);
-    width: 100%;
+ 
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #link-producto{

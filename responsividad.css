@@ -1,6 +1,19 @@
 /* Dispositivos muy pequeños (teléfonos en modo vertical) */
 @media (max-width: 576px) {
     /* Estilos para pantallas extra pequeñas */
+
+    .nav-link{
+        font-size: 10px;
+    }
+
+    .image-logo-title{
+height: 30px;
+width: 30px;
+    }
+    .nombre-empresa-title{
+font-size: 12px;
+    }
+
     .contenedor-cards {
         grid-template-columns: 1fr; 
     }
@@ -19,6 +32,10 @@
 
     .float-logo-title{
         display: none;
+    }
+
+    .servicios p{
+        font-size: 35px;
     }
 
     .image-services{
