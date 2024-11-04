@@ -24,34 +24,78 @@
     .image-services{
         left: 0;
         top: -400px;
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
 
     .image-services-2{
         left: 0;
         top: -400px;
-        height: 350px;
-        width: 350px;
+        height: 300px;
+        width: 300px;
     }
+
 
     .section-services{
         margin-top: 450px;
     }
 
     .square-mision-vision{
-        width: 400px;
-        margin-bottom: 400px;
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .img-services{
+        max-width: 200px ;
+        max-height: 200px;
     }
 
     .square-image{
         top: 0;
         left: 0;
+        width: 300px;
+        height: 300px; 
+    }
+
+    .content-square-image{
+        width: 300px;
+        height: 300px;  
+    }
+
+    .square-img{
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .content-square-description{
+        height: 250px;
+        width: 300px;
+    }
+
+    #square-description-1{
+        height: 250px;
+        width: 300px;
+    }
+
+    #square-description-2{
+        height: 250px;
+        width: 300px;
     }
 
     .square-description{
-        top: 400px;
+        top: 300px;
         left: 0;
+        width: 300px;
+        height: 250px;
+    }
+
+    .texto-mision-vision{
+        font-size: 11px;
+    }
+
+    .botones-mision-vision{
+        width: 300px;
     }
 
     .informacion-empresa-form{
@@ -67,10 +111,14 @@
     justify-self: center;
    }
 
+   
+
 }
 
 /* Dispositivos pequeños (teléfonos en modo horizontal y tablets pequeñas) */
 @media (min-width: 576px) and (max-width: 768px) {
+
+    
     .contenedor-cards {
         grid-template-columns: repeat(2, 1fr);
     }

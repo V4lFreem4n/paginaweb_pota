@@ -13,6 +13,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background: var(--color-blue-5);
+    width: 100%;
 }
 
 #link-producto{
@@ -314,12 +315,13 @@ width: 60%;
     position: relative;
 }
 
+
 .image-services{
     top: -110px;
     right: 100px;
     position: absolute;
-    height: 400px;
-    width: 400px;
+
+    width: 100%;
     background: #284469;
 
 }
@@ -328,10 +330,18 @@ width: 60%;
     top: -110px;
     left: 100px;
     position: absolute;
-    height: 400px;
-    width: 400px;
+    width: 100%;
     background: #284469;
+}
 
+.img-service{
+    max-width: 400px;
+    width: 100%;
+}
+
+.square-img{
+    width: 400px;
+    height: 400px;
 }
  
 
@@ -425,6 +435,12 @@ width: 400px;
     top: 0;
     left: 400px;
     transition: transform 1s ease;
+}
+
+.botones-mision-vision{
+    bottom: 0; 
+    height: 50px; 
+    width: 400px;
 }
 
 
